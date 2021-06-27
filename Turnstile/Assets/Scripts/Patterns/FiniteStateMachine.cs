@@ -6,7 +6,15 @@ namespace Patterns
 {
     public class FiniteStateMachine<T>
     {
+        // A Finite State Machine
+        //    - consists of a set of states,
+        //    - and at any given time, an FSM can exist in only one 
+        //      State out of these possible set of states.
+
+        // A dictionary to represent the a set of states.
         protected Dictionary<T, State<T>> mStates;
+
+        // The current state.
         protected State<T> mCurrentState;
 
         public FiniteStateMachine()
@@ -26,7 +34,9 @@ namespace Patterns
 
         public State<T> GetState(T stateID)
         {
-            return mStates[stateID];
+            if(mStates.ContainsKey(stateID))
+                return mStates[stateID];
+            return null;
         }
 
         public void SetCurrentState(T stateID)
