@@ -1,7 +1,4 @@
 <p align='left'>
-  <a href="#">
-    <img src="https://visitor-badge.glitch.me/badge?page_id=fsm-generic.visitor-badge" />        
-  </a>
   <a href="https://www.linkedin.com/in/shamim-akhtar/">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&flat-square&logo=linkedin&logoColor=white" />
   </a>
